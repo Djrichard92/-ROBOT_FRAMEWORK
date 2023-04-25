@@ -4,9 +4,7 @@ Documentation     clicoh_loginKeywords
 ...               Validations in each keywords
 ...               Call to pago object from here
 
-
 Resource          enviroment.robot
-
 Resource          ../pages/commonPage.robot
 Resource          ../pages/home_Page.robot
 
@@ -19,9 +17,6 @@ Homepage
 Validation Go to landingpage
     [Documentation]    Validacion de pagina de destino
     home_Page.Verify Page Loaded
-
-###################################################################################################
-###################################################################################################
 
 Home Elements
     [Documentation]    Elementos del Home
@@ -44,6 +39,3 @@ Go to Youtube
     ...                Caracteristicas: 
     Set Selenium Implicit Wait    10s
     home_Page.Go to Youtube
-    
-###################################################################################################
-###################################################################################################

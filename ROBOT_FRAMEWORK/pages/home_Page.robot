@@ -8,7 +8,6 @@ Library           SeleniumLibrary
 
 Resource          ../keywords/enviroment.robot
 
-
 *** Variables ***
 
 ${BUTTON_SEARCH} =  xpath:(//*[@id="search-form"]/input) [2]
@@ -17,15 +16,12 @@ ${CATEGORY_POSTMAN} =  xpath:(.//a[@href="/categories/postman"])
 ${GO_YOUTUBE} =  xpath:(.//a[@href="https://www.youtube.com/channel/UCSVljVzYbFphBtHvJgwMLsg"])
 ${YOUTUBE} =  xpath:(.//a[@href="/@toolsqa-destinationforqapr8414/about"])
 
-
 *** Keywords ***
-
 
 Go to landingpage
     [Documentation]    Landing
     Set Selenium Implicit Wait    10s
     Go to  ${URL}
-
 
 Verify Page Loaded
     [Documentation]    Validación
@@ -33,7 +29,6 @@ Verify Page Loaded
     Title Should Be                  Tools QA
     Page Should Contain              Selenium Online Trainings
     Page Should Contain              Training Batch starts from 04-Feb-2022
-
 
 Search Postman
     [Documentation]    Buscador POSTMAN
@@ -47,7 +42,6 @@ Search Postman
     Set Selenium Implicit Wait       20s
     Wait Until Element Is Visible    ${CATEGORY_POSTMAN}           10s
     Page Should Contain              ${TEXT_POSTMAN} 
-
 
 Go to Youtube
     [Documentation]    Ir a Youtube

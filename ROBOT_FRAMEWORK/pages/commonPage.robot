@@ -4,13 +4,10 @@ Documentation    Page uri: N/A is commonPage
 ...
 ...
 
-
 Library           SeleniumLibrary
 Resource          ../keywords/enviroment.robot
 
-
 *** Variables ***
-
 
 *** Keywords ***
 
